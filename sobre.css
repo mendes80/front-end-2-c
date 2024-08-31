@@ -1,0 +1,143 @@
+
+body {
+    background: #f0f8ff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #09537e;
+}
+
+h1, h2 {
+    color: #09537e;
+}
+
+.header {
+    background: #5dccff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.navigation {
+    background-color: #09537e;
+    padding: 10px;
+    text-align: center;
+}
+
+.navigation a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+button {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background: #5dccff;
+    color: #09537e;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+    background: #09537e;
+    color: #ffffff;
+}
+
+.content {
+    margin: 20px;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.text-section {
+    padding-right: 20px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #09537e;
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.quadro {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%; 
+    box-shadow: 0px 5px 5px 0px #000000;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+
+.quadro h3 {
+    font-size: 20px;
+    color: #09537e;
+}
+
+.quadro p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.quadro img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .quadro {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+}
